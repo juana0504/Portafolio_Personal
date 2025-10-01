@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Quintessential&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "inter", sans-serif;
+}
+
+
+p,
+a,
+button,
+li,
+label,
+input,
+select,
+textarea,
+span {
+    font-family: "roboto", sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1b1322;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Barra de navegacion */
+.navbar {
+    background-color: transparent !important;
+    padding: 15px 50px;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    /* Texto blanco */
+    font-weight: bold;
+    margin-right: 55px;
+    /* Separación entre enlaces */
+    transition: color 0.3s;
+    font-size: 27px;
+    font-family: "inter", sans-serif;
+}
+
+/* Hover */
+.navbar-nav .nav-link:hover {
+    color: #00cfff !important;
+    /* Azul al pasar el mouse */
+}
+
+.navbar-nav .nav-link.disabled {
+    color: #888 !important;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+}
+
+#contacto{
+    color: white !important;
+    /* Texto blanco */
+    font-weight: bold;
+    margin-right: 55px;
+    /* Separación entre enlaces */
+    transition: color 0.3s;
+    font-size: 27px;
+    font-family: "inter", sans-serif;
+    text-decoration: none;
+}
+
+#contacto:hover{
+    color: #00cfff !important;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    position: relative;
+    /* necesario para que las figuras se posicionen dentro */
+    background: linear-gradient(to bottom, #1b1322 0%, #241b30 100%);
+    padding: 80px 0;
+    overflow: hidden;
+    /* oculta lo que sobresalga */
+}
+
+/* Figuras */
+.circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 207, 255, 0.7) 0%, rgba(0, 207, 255, 0.7) 70%);
+    filter: blur(20px);
+    z-index: 1;
+}
+
+/* Arriba izquierda */
+.circle-top {
+    top: -80px;
+    left: -80px;
+}
+
+/* Abajo derecha */
+.circle-bottom {
+    bottom: -100px;
+    right: -100px;
+}
+
+/* Texto */
+.nombre {
+    max-width: 100%;
+    padding-right: 100px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.nombre h1 {
+    font-family: "Lobster", sans-serif;
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #120e16;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+
+.nombre p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.buttons a {
+    background-color: #3cc7f5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.buttons a:hover {
+    background-color: #2aaed9;
+}
+
+/* Imagen */
+.compu {
+    display: flex;
+    justify-content: center;
+    /* eje horizontal */
+    align-items: center;
+    /* eje vertical */
+    padding-left: 100px;
+}
+
+.img-fluid {
+    max-width: 290%;
+    height: auto;
+    display: center;
+    justify-content: center;
+    border: 3px solid transparent;
+    /* borde invisible de inicio */
+    border-radius: 10px;
+    /* opcional, bordes redondeados */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    /* que parezca clickeable */
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+}
