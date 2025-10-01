@@ -197,3 +197,44 @@ body {
 .img-fluid:hover {
     transform: scale(1.05);
 }
+
+/* Perfil */
+.perfil{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    position: relative; /* necesario para que las figuras se posicionen dentro */
+    background: linear-gradient(to bottom, #1b1322 0%, #241b30 100%);
+    padding: 80px 0;
+    overflow: hidden; /* oculta lo que sobresalga */
+}
+
+.imagen{
+  background-color: #3cc7f5;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  width: 400px;
+  height: 510px;
+  position: absolute;
+  z-index: 0;
+  top: 100px;
+  left: 109px;
+  filter: blur(5px);
+}
+
+.foto{
+  position: relative;
+  z-index: 2;
+}
+
+.datos{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.datos p{
+  margin-top: 50px;
+}
