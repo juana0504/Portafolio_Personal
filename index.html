@@ -20,38 +20,30 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container">
-                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Perfil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Estudios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Experiencia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Hobbies</a>
-                        </li>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#hero">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Estudios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Experiencia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Hobbies</a></li>
                     </ul>
                 </div>
 
                 <a id="contacto" href="#">Contacto</a>
-                
             </div>
         </nav>
 
-        <section class="hero">
+
+        <section id="hero">
 
             <div class="circle circle-top"></div>
             <div class="circle circle-bottom"></div>
@@ -67,7 +59,7 @@
                             y enfrentar nuevos retos que potencien mis habilidades como desarrolladora.</p>
 
                         <div class="buttons">
-                            <a href="#">Habilidades</a>
+                            <a href="#habilidades">Habilidades</a>
                             <a href="#">Portafolio</a>
                         </div>
                     </div>
@@ -83,30 +75,129 @@
     </header>
 
     <main>
-        <section class="perfil">
+        <section id="perfil">
 
             <div class="circle circle-top"></div>
             <div class="circle circle-bottom"></div>
-            
+
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 fot">
-                        <img src="" alt="Persona" class="foto" width="60%">
+                        <img src="img/Background.png" alt="Persona" class="foto" width="70%">
                         <div class="imagen"></div>
                     </div>
                     <div class="col-md-6 datos">
                         <h2>Perfil Profesional</h2>
-                        <p>Soy estudiante de Análisis y Desarrollo de Software, con interés en el desarrollo web y móvil, bases de datos y análisis de requerimientos. Me destaco por ser proactiva, responsable y tener facilidad para trabajar en equipo. Busco oportunidades para aplicar mis conocimientos en proyectos reales, seguir aprendiendo y crecer profesionalmente en el mundo tecnológico.</p>
+                        <p>Soy estudiante de Análisis y Desarrollo de Software, con interés en el desarrollo web y
+                            móvil, bases de datos y análisis de requerimientos. Me destaco por ser proactiva,
+                            responsable y tener facilidad para trabajar en equipo. Busco oportunidades para aplicar mis
+                            conocimientos en proyectos reales, seguir aprendiendo y crecer profesionalmente en el mundo
+                            tecnológico.</p>
                     </div>
                 </div>
             </div>
 
+        </section>
+
+        <section id="habilidades">
+
+            <div class="circle circle-top"></div>
+            <div class="circle circle-bottom"></div>
+
+            <div class="container">
+
+                <div class="row" id="contenedor-tarjetas">
+
+                    <h1>Habilidades</h1>
+              
+                    <div class="col-md-6 tarjeta">
+                        <div class="cont">
+                            <div class="icon-box">
+                                <img id="icono" src="img/html-5 (1).png" alt="html" width="42">
+                            </div>
+                            <h3>HTML</h3>
+                            <p>Lenguaje de marcado que utilizo para estructurar páginas web. Me permite crear contenido
+                                ordenado y optimizado para distintos dispositivos.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 tarjeta">
+                        <div class="cont">
+                            <div class="icon-box">
+                                <img id="icono" src="img/css-3 (1).png" alt="css" width="42">
+                            </div>
+                            <h3>CSS</h3>
+                            <p>Lenguaje para dar estilo y diseño a las páginas web, con enfoque en diseños responsivos y
+                                atractivos.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 tarjeta">
+                        <div class="cont">
+                            <div class="icon-box">
+                                <img id="icono" src="img/js.png" alt="js" width="42">
+                            </div>
+                            <h3>JavaScript</h3>
+                            <p>Lenguaje de programación que permite añadir interactividad y dinámicas a las páginas web.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 tarjeta">
+                        <div class="cont">
+                            <div class="icon-box">
+                                <img id="icono" src="img/figma (1).png" alt="figma" width="42">
+                            </div>
+                            <h3>Figma</h3>
+                            <p>Herramienta de diseño y prototipos UI/UX para crear interfaces y maquetas interactivas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 tarjeta extra oculto">
+                        <div class="cont">
+                            <div class="icon-box">
+                                <img id="icono" src="img/base-de-datos (1).png" alt="mysql" width="42">
+                            </div>
+                            <h3>MySQL</h3>
+                            <p>Sistema de gestión de bases de datos relacionales, utilizado para almacenar y consultar
+                                información.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 tarjeta extra oculto">
+                        <div class="cont">
+                            <div class="icon-box">
+                                <img id="icono" src="img/php.png" alt="php" width="42">
+                            </div>
+                            <h3>PHP</h3>
+                            <p>Lenguaje de programación del lado del servidor, útil para crear aplicaciones web
+                                dinámicas.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 tarjeta extra oculto">
+                        <div class="cont">
+                            <div class="icon-box">
+                                <img id="icono" src="img/bootstrap.png" alt="bootstrap" width="42">
+                            </div>
+                            <h3>Bootstrap</h3>
+                            <p>Bootstrap es un framework CSS y JavaScript que facilita crear páginas web responsivas y modernas.
+
+                        </div>
+                    </div>
+
+                    <button id="verMas" class="btn btn-primary">Ver más</button>
+                </div>
+            </div>
         </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
 
 </body>
 
