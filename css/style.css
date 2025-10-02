@@ -306,7 +306,6 @@ body {
   height: 220px;
 }
 
-
 .cont {
   background: #3cc7f5;
   padding: 0;
@@ -389,4 +388,34 @@ body {
 #verMas:active {
   transform: translateY(0);
   box-shadow: 0 2px 8px rgba(0, 207, 255, 0.4);
+}
+
+/* Portafolio */
+#portafolio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: #1b1322;
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+#portafolio h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+#portafolio .carousel-item {
+  text-align: center;
+  margin: 50px 0;
+}
+
+#portafolio a {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
