@@ -571,3 +571,49 @@ body {
   border-radius: 8px;
 }
 
+
+/* Footer */
+footer {
+  background: #22c9f1;  
+  margin: 0;
+  color: white;
+  overflow-x: hidden;
+  padding: 30px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;   
+  align-items: center;
+  gap: 40px;                 
+  flex-wrap: wrap;          
+}
+
+footer .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+}
+
+footer .contact-item img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s ease;
+}
+
+footer .contact-item img:hover {
+  transform: scale(1.1);
+}
+
+footer .contact-item a,
+footer .contact-item span {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer .contact-item a:hover {
+  text-decoration: underline;
+}
