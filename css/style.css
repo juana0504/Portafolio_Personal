@@ -359,32 +359,22 @@ body {
 
 
 #verMas {
-  display: block;
+  display: inline-block;
   margin: 30px auto;
-  /* centrado */
-  padding: 12px 28px;
-  /* tamaño */
-  font-size: 18px;
-  font-weight: 500;
-  color: #fff;
   background: #00cfff;
   border: none;
   border-radius: 30px;
-  /* bordes redondeados */
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 207, 255, 0.3);
 }
 
-/* Hover efecto */
 #verMas:hover {
   background: #009ec2;
-  /* un azul más oscuro */
   transform: translateY(-3px);
   box-shadow: 0 6px 18px rgba(0, 207, 255, 0.5);
 }
 
-/* Efecto al presionar */
 #verMas:active {
   transform: translateY(0);
   box-shadow: 0 2px 8px rgba(0, 207, 255, 0.4);
@@ -418,4 +408,61 @@ body {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+}
+
+/* Estudios */
+#estudios{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: #1b1322;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+#estudios h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+#estudios h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+#estudios .row {
+  background-color: #3FB6D2; /* azul del contenedor */
+  border-radius: 15px;
+  padding: 40px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  z-index: 1;
+  position: relative;
+  margin: 30px 0;
+}
+
+#estudios .col-md-6 {
+  flex: 1;
+}
+
+#estudios h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+#estudios p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #111;
 }
