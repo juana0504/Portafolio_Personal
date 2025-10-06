@@ -3,12 +3,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Quintessential&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "inter", sans-serif;
 }
 
 
-p,a,button,li,label,input,select,textarea,span {
+p,
+a,
+button,
+li,
+label,
+input,
+select,
+textarea,
+span {
   font-family: "roboto", sans-serif;
 }
 
@@ -116,9 +129,9 @@ body {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  background: linear-gradient(to bottom, #1b1322 0%, #241b30 100%);
+  background: #1b1322;
   padding: 80px 0;
-  overflow: hidden;
+  z-index: 1;
 }
 
 /* Figuras */
@@ -127,21 +140,47 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(0, 207, 255, 0.7) 0%, rgba(0, 207, 255, 0.7) 70%);
+  background: radial-gradient(circle, #00cfffb3 0%, rgba(0, 207, 255, 0.7) 70%);
   filter: blur(20px);
-  z-index: 1;
+  z-index: 5;
+  margin: 0 auto;
+  animation-name: stretch;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    background-color: #00cfffb3;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: #0585a1b3;
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: #074c5cb3;
+  }
 }
 
 /* Arriba izquierda */
 .circle-top {
   top: -80px;
   left: -80px;
+  z-index: 5;
 }
 
 /* Abajo derecha */
 .circle-bottom {
   bottom: -100px;
   right: -100px;
+  z-index: 5;
 }
 
 /* Texto */
@@ -224,7 +263,7 @@ body {
   position: relative;
   background-color: #1b1322;
   padding: 130px 0;
-  overflow: hidden;
+  z-index: 1;
 }
 
 .imagen {
@@ -243,6 +282,7 @@ body {
 }
 
 .foto {
+  width: 70%;
   position: relative;
   z-index: 2;
 }
@@ -264,7 +304,6 @@ body {
   justify-content: space-between;
   position: relative;
   background-color: #1b1322;
-  overflow: hidden;
   padding-bottom: 10px;
 }
 
@@ -369,7 +408,6 @@ body {
   justify-content: space-between;
   position: relative;
   background-color: #1b1322;
-  overflow: hidden;
   padding: 60px 0;
 }
 
@@ -394,14 +432,14 @@ body {
 
 
 /* Estudios */
-#estudios{
+#estudios {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
   background-color: #1b1322;
-  overflow: hidden;
   padding-bottom: 10px;
+  z-index: 1;
 }
 
 #estudios h1 {
@@ -421,7 +459,7 @@ body {
 }
 
 #estudios .row {
-  background-color: #3cc7f5; 
+  background-color: #3cc7f5;
   border-radius: 15px;
   padding: 40px;
   display: flex;
@@ -429,7 +467,6 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   text-align: left;
-  z-index: 1;
   position: relative;
   margin: 30px 0;
 }
@@ -454,13 +491,12 @@ body {
 
 
 /* Experiencia */
-#experiencia{
+#experiencia {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
   background-color: #1b1322;
-  overflow: hidden;
   padding-bottom: 90px;
 }
 
@@ -483,8 +519,8 @@ body {
   justify-content: space-between;
   z-index: 1;
   position: relative;
-  flex-wrap: wrap; 
-  height: 350px;
+  flex-wrap: wrap;
+  min-height: 350px;
 }
 
 #experiencia .dato p {
@@ -496,17 +532,16 @@ body {
 
 
 /* Hobbies */
-#hobbies{
+#hobbies {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
   background-color: #1b1322;
-  overflow: hidden;
   padding-bottom: 20px;
 }
 
-#hobbies h1{
+#hobbies h1 {
   font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 40px;
@@ -515,8 +550,8 @@ body {
   text-align: center;
 }
 
-#hobbies .row{
-  background-color: #3cc7f5; 
+#hobbies .row {
+  background-color: #3cc7f5;
   border-radius: 15px;
   padding: 40px;
   display: flex;
@@ -533,7 +568,7 @@ body {
   flex: 1;
 }
 
-#hobbies h2{
+#hobbies h2 {
   font-size: 2rem;
   margin-bottom: 30px;
   color: #111;
@@ -541,7 +576,7 @@ body {
   font-weight: 700;
 }
 
-#hobbies p{
+#hobbies p {
   font-size: 0.95rem;
   line-height: 1.6;
   color: #111;
@@ -549,13 +584,13 @@ body {
 }
 
 #hobbies .redes {
-  text-align: center; 
+  text-align: center;
 }
 
 #hobbies .redes-icons {
   display: flex;
-  justify-content: center; 
-  gap: 20px;              
+  justify-content: center;
+  gap: 20px;
   margin-top: 15px;
 }
 
@@ -567,26 +602,25 @@ body {
 
 #hobbies .redes-icons img:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
 }
 
 
 /* Footer */
 footer {
-  background: #22c9f1;  
+  background: #22c9f1;
   margin: 0;
   color: white;
-  overflow-x: hidden;
   padding: 30px;
 }
 
 footer .container {
   display: flex;
-  justify-content: center;   
+  justify-content: center;
   align-items: center;
-  gap: 40px;                 
-  flex-wrap: wrap;          
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 footer .contact-item {
@@ -616,4 +650,87 @@ footer .contact-item span {
 
 footer .contact-item a:hover {
   text-decoration: underline;
+}
+
+@media screen and (min-width:768px) and (max-width:1080px) {
+
+  .navbar {
+    padding: 5px 134px;
+  }
+
+  #hero {
+    padding: 80px 60px;
+  }
+
+  .compu {
+    padding-left: 50px;
+  }
+
+  .foto {
+    width: 40%;
+    position: absolute;
+  }
+
+  .imagen {
+    width: 348px;
+  }
+
+
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+  .container-fluid {
+    padding: 25px 100px;
+  }
+
+  #hero {
+    padding: 50px;
+  }
+
+  .nombre {
+    padding: 50px;
+  }
+
+  .img-fluid {
+    max-width: 214%;
+  }
+
+  #perfil {
+    padding: 80px 40px;
+  }
+
+  .imagen {
+    width: 231px;
+    height: 211px;
+    top: 160px;
+    left: 85px;
+  }
+
+  .datos p {
+    margin-top: 30PX;
+  }
+
+  .circle-bottom {
+    right: -148px;
+  }
+
+  .circle-top {
+    left: -114px;
+  }
+
+  #habilidades .container {
+    margin: 30px;
+  }
+
+  #estudios .container {
+    margin: 30px;
+  }
+
+  #experiencia {
+    margin: 30px;
+  }
+
+  #hobbies {
+    margin: 30px;
+  }
 }
