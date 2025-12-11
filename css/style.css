@@ -74,6 +74,7 @@ html {
 }
 
 body {
+  width: 100%;
   font-family: 'Inter', 'Poppins', sans-serif;
   background: linear-gradient(135deg, #1b1322 0%, #0f0a1a 100%);
   color: var(--text-light);
@@ -94,43 +95,6 @@ p, a, button, li, label, input, select, textarea, span {
 img {
   max-width: 100%;
   height: auto;
-}
-
-/* LOADER*/
-.loader-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: var(--secondary-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-.loader-wrapper.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.loader {
-  width: 60px;
-  height: 60px;
-  border: 5px solid rgba(60, 199, 245, 0.2);
-  border-top-color: var(--primary-color);
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
-
-.loader-wrapper p {
-  margin-top: var(--spacing-md);
-  color: var(--primary-color);
-  font-size: 1.1rem;
-  letter-spacing: 2px;
 }
 
 @keyframes spin {
@@ -456,7 +420,7 @@ img {
 .circle {
   position: absolute;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(60, 199, 245, 0.4) 0%, rgba(60, 199, 245, 0.1) 70%);
+  background: radial-gradient(circle, rgba(16, 180, 213, 0.4) 0%, rgba(5, 165, 219, 0.1) 70%);
   filter: blur(40px);
   pointer-events: none;
   animation: pulse 4s ease-in-out infinite;
@@ -1269,9 +1233,10 @@ footer .contact-item a:hover {
   }
   
   .main-title {
+    margin: 40px;
     font-size: 2.2rem;
   }
-  
+
   .section-title {
     font-size: 1.8rem;
   }
@@ -1314,6 +1279,7 @@ footer .contact-item a:hover {
   
   .hero-img {
     max-width: 100%;
+    margin: 30px;
   }
   
   .profile-image-wrapper {
@@ -1327,6 +1293,30 @@ footer .contact-item a:hover {
   
   .imagen-bg {
     max-width: 280px;
+  }
+
+  #perfil{
+    margin: 50px;
+  }
+
+  #habilidades{
+    margin: 50px;
+  }
+
+  #portafolio{
+     margin: 50px;
+  }
+
+  #estudios{
+    margin: 50px;
+  }
+
+  [data-aos^=fade][data-aos^=fade].aos-animate{
+    margin: 10px;
+  }
+
+  #experiencia{
+    margin: 50px;
   }
   
   .profile-badge {
@@ -1383,6 +1373,7 @@ footer .contact-item a:hover {
   
   .lead-text {
     font-size: 1rem;
+    margin: 40px;
   }
   
   .section-title {
