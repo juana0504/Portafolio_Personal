@@ -1,312 +1,248 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- jQuery (necesario antes de Slick) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Slick CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <!-- Slick JS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <meta name="description" content="Portafolio de Juana Valentina Rodriguez - Desarrolladora de Software">
+    <title>Juana Rodriguez | Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/cv-en-linea.png" type="image/x-icon">
 </head>
 
 <body>
 
+    <div id="loader" class="loader-wrapper">
+        <div class="loader"></div>
+        <p>Cargando...</p>
+    </div>
+
+    <button id="scrollToTop" class="scroll-to-top">↑</button>
+
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item"><a class="nav-link active" href="#hero">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#estudios">Estudios</a></li>
                         <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
                         <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
                     </ul>
                 </div>
-
-                <a id="contacto" href="https://wa.link/0ixtm9">Contacto</a>
+                <a id="contacto" href="https://wa.link/0ixtm9" target="_blank" class="btn-contacto">Contacto</a>
             </div>
         </nav>
 
-
         <section id="hero">
-
             <div class="circle circle-top"></div>
-
             <div class="container">
-                <div class="row">
-
-                    <!-- Texto a la izquierda -->
-                    <div class="col-md-5 nombre">
-                        <h1>Juana Valentina <br> Rodriguez Hernandez </h1>
-                        <p>¡Hola! Soy Juana Rodríguez, estudiante apasionada por el desarrollo de software, la
-                            tecnología y la creación de soluciones innovadoras. Me encanta aprender, colaborar en equipo
-                            y enfrentar nuevos retos que potencien mis habilidades como desarrolladora.</p>
-
-                        <div class="buttons">
-                            <a href="#habilidades">Habilidades</a>
-                            <a href="#portafolio">Portafolio</a>
-                        </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 nombre" data-aos="fade-right">
+                        <h1 class="main-title">Juana Valentina<br><span class="highlight">Rodriguez Hernandez</span>
+                        </h1>
+                        <p class="lead-text">Estudiante apasionada por el desarrollo de software, la tecnología y la
+                            creación de soluciones innovadoras.</p>
                     </div>
-
-                    <!-- Imagen a la derecha -->
-                    <div class="col-md-7 compu">
-                        <img src="img/hero.png" alt="Laptop futurista" class="img-fluid hero-img w-900">
+                    <div class="col-lg-6 compu" data-aos="fade-left">
+                        <img src="img/hero.png" alt="Laptop" class="img-fluid hero-img">
                     </div>
-
                 </div>
             </div>
         </section>
     </header>
 
     <main>
-
         <section id="perfil">
-
             <div class="circle circle-bottom"></div>
-
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 fot">
-                        <img src="img/Background.png" alt="Persona" class="foto">
-                        <div class="imagen"></div>
+                <div class="row align-items-center">
+                    <div class="col-lg-5 fot" data-aos="fade-right">
+                        <div class="profile-image-wrapper">
+                            <img src="img/Background.png" alt="Juana Rodriguez" class="foto">
+                            <div class="imagen-bg"></div>
+                        </div>
                     </div>
-                    <div class="col-md-6 datos">
-                        <h2>Perfil Profesional</h2>
-                        <p>Soy estudiante de Análisis y Desarrollo de Software, con interés en el desarrollo web y
-                            móvil, bases de datos y análisis de requerimientos. Me destaco por ser proactiva,
-                            responsable y tener facilidad para trabajar en equipo. Busco oportunidades para aplicar mis
-                            conocimientos en proyectos reales, seguir aprendiendo y crecer profesionalmente en el mundo
-                            tecnológico.</p>
+                    <div class="col-lg-7 datos" data-aos="fade-left">
+                        <h2 class="section-title">Perfil Profesional</h2>
+                        <p class="profile-description">Soy estudiante de <strong>Análisis y Desarrollo de
+                                Software</strong>, con interés en el desarrollo web y móvil, bases de datos y análisis
+                            de requerimientos.</p>
+                        <a href="docs/CV_Juana.pdf" target="_blank" class="btn-download">Ver Hoja de Vida</a>
                     </div>
                 </div>
             </div>
-
         </section>
 
         <section id="habilidades">
-
-            
-
             <div class="container">
-
-                <div class="row" id="contenedor-tarjetas">
-
-                    <h1>Habilidades</h1>
-
-                    <div class="col-md-6 tarjeta">
-                        <div class="cont">
-                            <div class="icon-box">
-                                <img id="icono" src="img/html-5 (1).png" alt="html" width="42">
-                            </div>
-                            <h3>HTML</h3>
-                            <p>Lenguaje de marcado que utilizo para estructurar páginas web. Me permite crear contenido
-                                ordenado y optimizado para distintos dispositivos.</p>
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h1 class="section-title">Habilidades Técnicas</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 tarjeta" data-aos="fade-up">
+                        <div class="skill-card">
+                            <div class="skill-icon"><img src="img/html-5 (1).png" alt="HTML" width="50"></div>
+                            <h3>HTML5</h3>
+                            <p>Estructuración de páginas web semánticas y accesibles.</p>
                         </div>
                     </div>
-
-                    <div class="col-md-6 tarjeta">
-                        <div class="cont">
-                            <div class="icon-box">
-                                <img id="icono" src="img/css-3 (1).png" alt="css" width="42">
-                            </div>
-                            <h3>CSS</h3>
-                            <p>Lenguaje para dar estilo y diseño a las páginas web, con enfoque en diseños responsivos y
-                                atractivos.</p>
+                    <div class="col-lg-4 col-md-6 tarjeta" data-aos="fade-up">
+                        <div class="skill-card">
+                            <div class="skill-icon"><img src="img/css-3 (1).png" alt="CSS" width="50"></div>
+                            <h3>CSS3</h3>
+                            <p>Diseño responsivo y atractivo con animaciones modernas.</p>
                         </div>
                     </div>
-
-                    <div class="col-md-6 tarjeta">
-                        <div class="cont">
-                            <div class="icon-box">
-                                <img id="icono" src="img/js.png" alt="js" width="42">
-                            </div>
+                    <div class="col-lg-4 col-md-6 tarjeta" data-aos="fade-up">
+                        <div class="skill-card">
+                            <div class="skill-icon"><img src="img/js.png" alt="JS" width="50"></div>
                             <h3>JavaScript</h3>
-                            <p>Lenguaje de programación que permite añadir interactividad y dinámicas a las páginas web.
-                            </p>
+                            <p>Interactividad y funcionalidades dinámicas.</p>
                         </div>
                     </div>
-
-                    <div class="col-md-6 tarjeta">
-                        <div class="cont">
-                            <div class="icon-box">
-                                <img id="icono" src="img/figma (1).png" alt="figma" width="42">
-                            </div>
+                    <div class="col-lg-4 col-md-6 tarjeta" data-aos="fade-up">
+                        <div class="skill-card">
+                            <div class="skill-icon"><img src="img/figma (1).png" alt="Figma" width="50"></div>
                             <h3>Figma</h3>
-                            <p>Herramienta de diseño y prototipos UI/UX para crear interfaces y maquetas interactivas.
-                            </p>
+                            <p>Diseño UI/UX y prototipos interactivos.</p>
                         </div>
                     </div>
-
-                    <div class="col-md-6 tarjeta extra oculto">
-                        <div class="cont">
-                            <div class="icon-box">
-                                <img id="icono" src="img/base-de-datos (1).png" alt="mysql" width="42">
-                            </div>
+                    <div class="col-lg-4 col-md-6 tarjeta extra oculto" data-aos="fade-up">
+                        <div class="skill-card">
+                            <div class="skill-icon"><img src="img/base-de-datos (1).png" alt="MySQL" width="50"></div>
                             <h3>MySQL</h3>
-                            <p>Sistema de gestión de bases de datos relacionales, utilizado para almacenar y consultar
-                                información.</p>
+                            <p>Gestión de bases de datos relacionales.</p>
                         </div>
                     </div>
-
-                    <div class="col-md-6 tarjeta extra oculto">
-                        <div class="cont">
-                            <div class="icon-box">
-                                <img id="icono" src="img/php.png" alt="php" width="42">
-                            </div>
+                    <div class="col-lg-4 col-md-6 tarjeta extra oculto" data-aos="fade-up">
+                        <div class="skill-card">
+                            <div class="skill-icon"><img src="img/php.png" alt="PHP" width="50"></div>
                             <h3>PHP</h3>
-                            <p>Lenguaje de programación del lado del servidor, útil para crear aplicaciones web
-                                dinámicas.</p>
+                            <p>Desarrollo backend de aplicaciones web.</p>
                         </div>
                     </div>
-
-                    <div class="col-md-6 tarjeta extra oculto">
-                        <div class="cont">
-                            <div class="icon-box">
-                                <img id="icono" src="img/bootstrap.png" alt="bootstrap" width="42">
-                            </div>
+                    <div class="col-lg-4 col-md-6 tarjeta extra oculto" data-aos="fade-up">
+                        <div class="skill-card">
+                            <div class="skill-icon"><img src="img/bootstrap.png" alt="Bootstrap" width="50"></div>
                             <h3>Bootstrap</h3>
-                            <p>Bootstrap es un framework CSS y JavaScript que facilita crear páginas web responsivas y
-                                modernas.
-
+                            <p>Framework para desarrollo responsive rápido.</p>
                         </div>
                     </div>
-
-                    <button id="verMas" class="btn btn-primary">Ver más</button>
+                </div>
+                <div class="text-center mt-5">
+                    <button id="verMas" class="btn-ver-mas">Ver más habilidades</button>
                 </div>
             </div>
         </section>
 
         <section id="portafolio">
             <div class="circle circle-top"></div>
-
-            <div class="container text-center">
-                <h1>Portafolio</h1>
-
-                <div id="carousel-portafolio" class="carousel slide">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h1 class="section-title">Portafolio de Proyectos</h1>
+                </div>
+                <div id="carousel-portafolio" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <a href="https://juana0504.github.io/Paractica_Bootstrap_2/">
+                            <a href="https://juana0504.github.io/Paractica_Bootstrap_2/" target="_blank">
                                 <img src="img/Carrusel 1.png" class="d-block mx-auto w-50" alt="Proyecto 1">
                             </a>
                         </div>
-
                         <div class="carousel-item">
-                            <a href="https://juana0504.github.io/rumbo-practica-html-css/">
+                            <a href="https://juana0504.github.io/rumbo-practica-html-css/" target="_blank">
                                 <img src="img/Carrusel 2.png" class="d-block mx-auto w-50" alt="Proyecto 2">
                             </a>
                         </div>
                         <div class="carousel-item">
-                            <a href="https://juana0504.github.io/base_figura_DOM/">
-                                <img src="img/Carrusel 3.png" class="d-block mx-auto w-50" alt="Proyecto 1">
+                            <a href="https://juana0504.github.io/base_figura_DOM/" target="_blank">
+                                <img src="img/Carrusel 3.png" class="d-block mx-auto w-50" alt="Proyecto 3">
                             </a>
                         </div>
-
                         <div class="carousel-item">
-                            <a href="https://juana0504.github.io/base-vehiculos-dinamicos/">
-                                <img src="img/Carrusel 4.png" class="d-block mx-auto w-50" alt="Proyecto 2">
+                            <a href="https://juana0504.github.io/base-vehiculos-dinamicos/" target="_blank">
+                                <img src="img/Carrusel 4.png" class="d-block mx-auto w-50" alt="Proyecto 4">
                             </a>
                         </div>
                     </div>
-
                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel-portafolio"
                         data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                        <span class="carousel-control-prev-icon"></span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carousel-portafolio"
                         data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                        <span class="carousel-control-next-icon"></span>
                     </button>
                 </div>
             </div>
         </section>
 
         <section id="estudios">
-
             <div class="circle circle-bottom"></div>
-
             <div class="container">
-                <h1>Estudios</h1>
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h1 class="section-title">Estudios y Certificaciones</h1>
+                </div>
                 <div class="row">
-                    <h2>Certificaciones</h2>
-                    <div class="col-md-6">
-                        <h3>Soporte TI</h3>
-                        <p>
-                            Es una certificación esencial para quienes inician su carrera en tecnologías de la
-                            información. Avala conocimientos prácticos en instalación, configuración y mantenimiento de
-                            computadoras, redes básicas, dispositivos móviles y seguridad.
-                            Esta certificación demuestra que el profesional está capacitado para resolver problemas
-                            técnicos comunes y brindar soporte a usuarios finales, lo cual es clave en roles de mesa de
-                            ayuda, soporte técnico o asistencia en sistemas.
-                        </p>
+                    <div class="col-md-6" data-aos="fade-right">
+                        <div class="timeline-content">
+                            <h3>Soporte TI</h3>
+                            <p>Certificación en instalación, configuración y mantenimiento de computadoras, redes y
+                                dispositivos.</p>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <h3>Fundamentos profecionales en Análisis y Desarrollo de Software</h3>
-                        <p>Esta certificación valida competencias en el desarrollo de aplicaciones usando la nube de
-                            Microsoft Azure. Existen niveles como Azure Fundamentals para comprender los conceptos
-                            básicos, y Azure Developer Associate para demostrar habilidades en la creación, despliegue y
-                            mantenimiento de soluciones en la nube.
-                            Es ideal para analistas, desarrolladores y programadores que trabajan con tecnologías
-                            modernas, ya que demuestra dominio en entornos reales de desarrollo en la nube, lo cual es
-                            muy valorado en el sector empresarial actual.
-                        </p>
+                    <div class="col-md-6" data-aos="fade-left">
+                        <div class="timeline-content">
+                            <h3>Análisis y Desarrollo de Software</h3>
+                            <p>Certificación en desarrollo de aplicaciones y soluciones en la nube con Microsoft Azure.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="experiencia">
-            
-
             <div class="container">
-                <h1>Experiencia</h1>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="dato">
-                            <p>Desarrollo de Aplicación “Mi Agenda Escolar”
-                                Rol: Programadora Fullstack | Tecnologías: Java, SQLite, Android Studio
-                                Descripción: Creación de una app móvil para registrar tareas, fechas de exámenes y
-                                recordatorios. Implementé la interfaz y la lógica de almacenamiento local.
-                            </p>
-                            <p>Sistema Web de Gestión de Inventario
-                                Rol: Backend Developer | Tecnologías: PHP, MySQL
-                                Descripción: Proyecto académico que permite registrar productos, controlar stock y
-                                generar
-                                reportes. Implementé las funciones CRUD y la conexión a base de datos.
-                            </p>
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span class="section-label">Trayectoria</span>
+                    <h1 class="section-title">Experiencia</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <div class="experience-card">
+                            <h3>Mi Agenda Escolar</h3>
+                            <span class="experience-role">Fullstack</span>
+                            <p>App móvil con Java, SQLite y Android Studio.</p>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="dato">
-                            <p>Proyecto académico: Sistema de reservas para eventos
-                                Rol: Desarrolladora Backend | Tecnologías: PHP, MySQL
-                                Descripción: Implementé funcionalidades para la gestión de reservas, validación de datos
-                                y
-                                conexión con base de datos.
-                            </p>
-                            <p>
-                                Diseño de Prototipos para App de Turismo “Aventura Go”
-                                Rol: Diseñadora UX/UI | Herramientas: Figma, Canva
-                                Descripción: Desarrollo de prototipos de baja y alta fidelidad para una aplicación de
-                                reservas turísticas. Aplicación de principios de diseño centrado en el usuario
-                            </p>
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <div class="experience-card">
+                            <h3>Sistema de Inventario</h3>
+                            <span class="experience-role">Backend</span>
+                            <p>Sistema CRUD con PHP y MySQL.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <div class="experience-card">
+                            <h3>Sistema de Reservas</h3>
+                            <span class="experience-role">Backend</span>
+                            <p>Gestión de reservas con PHP y MySQL.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <div class="experience-card">
+                            <h3>Aventura Go</h3>
+                            <span class="experience-role">UX/UI</span>
+                            <p>Prototipos con Figma y Canva.</p>
                         </div>
                     </div>
                 </div>
@@ -314,39 +250,36 @@
         </section>
 
         <section id="hobbies">
-
             <div class="circle circle-top"></div>
-
             <div class="container">
-                <h1>Hobbies y Redes Sociales</h1>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2>Hobbies</h2>
-                        <p>Lectura: Me apasiona leer novelas de drama, romance y misterio. La lectura me permite
-                            desconectarme, explorar diferentes historias y estimular la imaginación.
-                            <br>
-                            Manualidades: Disfruto crear objetos decorativos, pintar y realizar proyectos creativos con
-                            mis manos, lo cual me ayuda a desarrollar la paciencia y la precisión.
-                            <br>
-                            Música: Escuchar música es parte esencial de mi rutina diaria. Me acompaña mientras estudio
-                            o programo, y me ayuda a relajarme y concentrarme.
-                        </p>
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h1 class="section-title">Hobbies y Redes</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <div class="hobbies-content">
+                            <h2>Mis Hobbies</h2>
+                            <p><strong>Lectura:</strong> Novelas de drama, romance y misterio.</p>
+                            <p><strong>Manualidades:</strong> Proyectos creativos y decorativos.</p>
+                            <p><strong>Música:</strong> Acompañamiento en estudio y programación.</p>
+                        </div>
                     </div>
-                    <div class="col-md-6 redes">
-                        <h2>Redes Sociales</h2>
-                        <div class="redes-icons">
-                            <a href="https://github.com/" target="_blank"><img src="img/github (1).png"
-                                    alt="GitHub"></a>
-                            <a href="https://linkedin.com/" target="_blank"><img src="img/logotipo-de-linkedin (1).png"
-                                    alt="LinkedIn"></a>
-                            <a href="https://wa.me/xxxx" target="_blank"><img src="img/whatsapp (2).png"
-                                    alt="WhatsApp"></a>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <div class="hobbies-content">
+                            <h2>Redes Sociales</h2>
+                            <div class="redes-icons">
+                                <a href="https://github.com/juana0504" target="_blank"><img src="img/github (1).png"
+                                        alt="GitHub"></a>
+                                <a href="https://linkedin.com/in/juana-valentina" target="_blank"><img
+                                        src="img/logotipo-de-linkedin (1).png" alt="LinkedIn"></a>
+                                <a href="https://wa.link/0ixtm9" target="_blank"><img src="img/whatsapp (2).png"
+                                        alt="WhatsApp"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer>
@@ -355,12 +288,10 @@
                 <img src="img/llamar (1).png" alt="Teléfono">
                 <span>3223733675</span>
             </div>
-
             <div class="contact-item">
                 <img src="img/github (1).png" alt="GitHub">
                 <a href="https://github.com/juana0504" target="_blank">github.com/juana0504</a>
             </div>
-
             <div class="contact-item">
                 <img src="img/logotipo-de-linkedin (1).png" alt="LinkedIn">
                 <a href="https://linkedin.com/in/juana-valentina" target="_blank">linkedin.com/in/juana-valentina</a>
@@ -368,12 +299,21 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
-
+    <script>
+        AOS.init({ duration: 800, once: true });
+        window.addEventListener('load', () => {
+            setTimeout(() => document.getElementById('loader').classList.add('hidden'), 1000);
+        });
+        const scrollBtn = document.getElementById('scrollToTop');
+        window.addEventListener('scroll', () => {
+            scrollBtn.classList.toggle('visible', window.pageYOffset > 300);
+            document.querySelector('.navbar').classList.toggle('scrolled', window.pageYOffset > 100);
+        });
+        scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    </script>
 </body>
 
 </html>
